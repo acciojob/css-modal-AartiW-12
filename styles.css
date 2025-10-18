@@ -1,1 +1,46 @@
+
+
 /*  your css code here. If applicable */
+.body{
+	box-sizing:border-box;
+	text-align:center;
+	align-content:center
+}
+.hidden{
+	display:none;
+}
+#openModal{
+	cursor:pointer
+}
+.modal-content{
+	box-sizing:border-box;
+	padding:10px;
+	height:100px;
+	width:800px;
+	/* background-color:yellow */
+}
+.modal-header{
+	width:600px;
+	display: flex;
+	padding:0 20px;
+	margin:10px; 
+	background-color:lightgreen;
+	color:white;
+	text-align:center;
+	justify-content:space-between;
+	align-items:center
+}
+.close-modal{
+	height:25px;
+	width: 25px;
+	background-color:lightgreen;
+	border:none;
+	color:white;
+	font-weight:bolder;
+	cursor:pointer;
+	font-size:20px;
+}
+.modal-body{
+	padding:0 20px;
+}
+
