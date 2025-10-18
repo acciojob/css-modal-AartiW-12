@@ -1,46 +1,60 @@
+body {
+	box-sizing: border-box;
+	text-align: center;
+	align-content: center;
+}
 
+.hidden {
+	display: none;
+}
 
-/*  your css code here. If applicable */
-.body{
-	box-sizing:border-box;
-	text-align:center;
-	align-content:center
+#openModal {
+	cursor: pointer;
 }
-.hidden{
-	display:none;
-}
-#openModal{
-	cursor:pointer
-}
-.modal-content{
-	box-sizing:border-box;
-	padding:10px;
-	height:100px;
-	width:800px;
-	/* background-color:yellow */
-}
-.modal-header{
-	width:600px;
+
+/* ✅ this makes modal background clickable for Cypress */
+.modal {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
 	display: flex;
-	padding:0 20px;
-	margin:10px; 
-	background-color:lightgreen;
-	color:white;
-	text-align:center;
-	justify-content:space-between;
-	align-items:center
-}
-.close-modal{
-	height:25px;
-	width: 25px;
-	background-color:lightgreen;
-	border:none;
-	color:white;
-	font-weight:bolder;
-	cursor:pointer;
-	font-size:20px;
-}
-.modal-body{
-	padding:0 20px;
+	justify-content: center;
+	align-items: center;
 }
 
+.modal-content {
+	box-sizing: border-box;
+	padding: 10px;
+	height: 100px;
+	width: 800px;
+	background-color: white;
+	border-radius: 6px;
+}
+
+.modal-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: lightgreen;
+	color: white;
+	padding: 0 20px;
+	margin: 10px;
+}
+
+.close-modal {
+	height: 25px;
+	width: 25px;
+	background-color: lightgreen;
+	border: none;
+	color: white;
+	font-weight: bolder;
+	cursor: pointer;
+	font-size: 20px;
+}
+
+.modal-body {
+	padding: 0 20px;
+}
