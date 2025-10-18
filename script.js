@@ -12,6 +12,6 @@ closeModal.addEventListener("click", ()=>{
 
 window.addEventListener("click", (e)=>{
 	if(e.target === modal){
-		modal.classList.add("hidden")
+		e.target.classList.add("hidden")
 	}
 });
